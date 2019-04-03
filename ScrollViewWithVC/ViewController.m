@@ -145,7 +145,7 @@
     if (!_headView) {
         CGFloat startY =IS_IPHONE_X?50:20;
         _headView = [[ZJHeadView alloc]initWithFrame:CGRectMake(0, startY == 0 ? 20:startY, SCREEN_WIDTH, 40)];
-        _headView.Max_Num = 5;
+        _headView.Max_Num = 4;
     }
     return _headView;
 }

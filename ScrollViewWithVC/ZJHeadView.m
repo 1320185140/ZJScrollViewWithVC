@@ -123,7 +123,7 @@
     }else if (index - Btn_Tag>self.titles.count - 1 - CenterIndex){//右侧不需要移动
         targetIndex = self.titles.count - self.Max_Num;
     }else{//中间需要移动
-        targetIndex = (index - Btn_Tag-2);
+        targetIndex = (index - Btn_Tag- CenterIndex + 1);
     }
     [self.scrollView setContentOffset:CGPointMake(_Btn_Width * targetIndex, 0) animated:YES];
 }
